@@ -22,7 +22,12 @@ body {
   padding: 2.5rem;
   display: flex;
 }
-
+.logo {
+  text-align: center;
+  font-family: inherit;
+  font-size: medium;
+  font-size: 1.4rem;
+}
 .leftpane {
   flex: 1;
   background-color: var(--color-dark-light);
@@ -36,19 +41,42 @@ body {
   height: 100%;
   background-color: var(--color-alildark);
 }
+.form__label {
+  flex: 0 0 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.form__input {
+  width: 100%;
+  /* padding: 0.3rem 1.1rem; */
+  font-family: inherit;
+  font-size: 1.4rem;
+  border: none;
+  height: 4.5rem;
+  width: 35rem;
+  border-radius: 3px;
+  background-color: var(--color-dark-light);
+  transition: all 0.2s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: #fff;
+}
 
 .form {
   background-color: #534f4f;
   border-radius: 5px;
   padding: 1.5rem 2.75rem;
   margin-bottom: 1.75rem;
+  margin-top: 1.75rem;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.5rem 2.5rem;
 
   /* Match height and activity boxes */
-  height: 5rem;
+  height: 7rem;
   transition: all 0.5s, transform 1ms;
 }
 
@@ -56,11 +84,4 @@ body {
   margin-top: auto;
   text-decoration: none;
   text-align: center;
-}
-
-.form {
-  border: 1px solid;
-  border-radius: 0.2rem;
-  margin: 1.5rem;
-  padding: 1rem 2rem;
 }

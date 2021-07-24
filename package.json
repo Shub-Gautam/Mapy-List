@@ -1,0 +1,23 @@
+{
+  "name": "mapy-list",
+  "version": "1.0.0",
+  "description": "A todo list on Map",
+  "main": "script.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shub-Gautam/Mapy-List.git"
+  },
+  "author": "Shubham Gautam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shub-Gautam/Mapy-List/issues"
+  },
+  "homepage": "https://github.com/Shub-Gautam/Mapy-List#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  }
+}
