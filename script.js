@@ -1,14 +1,6 @@
 let cords = [];
 
-const get_cords = function (cords) {
-  const data = navigator.geolocation.getCurrentPosition((position) => {
-    const { longitude } = position.coords;
-    const { latitude } = position.coords;
-    // console.log(latitude, longitude);
-    this.cords = [latitude, longitude];
-    // console.log(cords);
-  });
-};
+
 class App {
   _loadMap(position) {
     const { latitude } = position.coords;
@@ -30,6 +22,16 @@ class App {
       this._renderWorkoutMarker(work);
     });
   }
+  const get_cords = function (cords) {
+    const data = navigator.geolocation.getCurrentPosition((position) => {
+      const { longitude } = position.coords;
+      const { latitude } = position.coords;
+      // console.log(latitude, longitude);
+      this.cords = [latitude, longitude];
+      // console.log(cords);
+    });
+  };
+  
 }
 
 get_cords();
